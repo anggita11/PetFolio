@@ -15,7 +15,7 @@ const PROJECTS_DATA = [
       "Platform online marketplace untuk mendigitalisasi pasar tradisional yang menghubungkan pembeli, penjual, dan pengelola secara aman dan terstruktur.",
     description:
       "Mengembangkan platform online marketplace pasar tradisional yang menghubungkan pembeli, penjual, dan pengelola. Mengerjakan fitur penjelajahan produk, keranjang, manajemen penjual, dan sistem persetujuan untuk mendukung transaksi yang aman serta mendorong digitalisasi pasar tradisional.",
-    image: "assets/images/pastar.png",
+    image: "assets/images/Pastar.png",
     tags: ["Laravel", "Bootstrap"],
     features: [
       "Marketplace online untuk pasar tradisional",
@@ -32,7 +32,7 @@ const PROJECTS_DATA = [
       "Aplikasi mobile berbasis machine learning untuk mendeteksi kesehatan mental melalui pemrosesan data dan layanan backend yang andal.",
     description:
       "Mengembangkan aplikasi mobile berbasis machine learning untuk membantu deteksi kesehatan mental. Berfokus pada pembangunan serta pengoptimalan model machine learning, sekaligus mengimplementasikan sistem backend untuk mendukung fungsionalitas aplikasi dan pemrosesan data yang akurat.",
-    image: "assets/images/shineyou.png",
+    image: "assets/images/Shineyou.png",
     tags: ["Kotlin", "Firebase", "Python"],
     features: [
       "Melihat Berita & Artikel Kesehatan Mental Terkini",
@@ -49,7 +49,7 @@ const PROJECTS_DATA = [
       "Aplikasi Mobile AI yang mampu mendeteksi penyakit kulit dengan akurasi tinggi menggunakan model Vision Transformer (ViT) berbasis TensorFlow.",
     description:
       "Skinlytic adalah platform deteksi penyakit kulit berbasis AI. Didesain untuk membantu deteksi dini penyakit kulit dengan akurasi tinggi.",
-    image: "assets/images/skinlytic.png",
+    image: "assets/images/Skinlytic.png",
     tags: ["Python", "ViT", "TensorFlow"],
     features: [
       "Melakukan Deteksi penyakit kulit dengan akurasi tinggi menggunakan model ViT",
