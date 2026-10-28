@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="day">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Web Modern - Tema Awan Biru Putih Soft Sky & Glassmorphism. Siap diunggah ke GitHub Pages." />
+  <meta name="keywords" content="Portfolio, Web Developer, Full-Stack, React, Node.js, Glassmorphic, GitHub Pages" />
+  <meta name="author" content="Sky Developer" />
+  <title>Peter - Portofolio</title>
+
+  <!-- Google Fonts & FontAwesome / Devicon Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dynamic Sky Background Canvas -->
+  <canvas id="sky-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="navbar-header">
+    <div class="navbar-container">
+      <a href="#hero" class="logo-brand" id="nav-logo">
+        <i class="fas fa-cloud logo-cloud-icon text-gradient"></i>
+        <span>Pet<span class="text-gradient">Folio</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active" id="nav-home">Beranda</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Pendidikan</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">Keahlian</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Proyek</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-experience">Pengalaman</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Kontak</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Ubah Tema Sky (Day/Night)" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Mobile Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-text-content">
+        <div class="hero-badge">
+          <span class="cloud-dot"></span>
+          <span>Portofolio</span>
+        </div>
+        <h1 class="hero-title">
+          Halo, Saya <span class="text-gradient">Peter Anggita</span>
+        </h1>
+        <div class="hero-role-wrapper">
+          <span id="typing-text"></span><span class="typing-cursor"></span>
+        </div>
+        <p class="hero-description">
+          Fresh graduate <strong>Teknik Informatika</strong> Politeknik Caltex Riau, berfokus pada pengembangan aplikasi web dan artificial intelligence.
+        </p>
+
+        <!-- <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+            <i class="fas fa-rocket"></i> Lihat Proyek
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+            <i class="fas fa-envelope"></i> Hubungi Saya
+          </a>
+        </div> -->
+
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub" id="social-github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" title="LinkedIn" id="social-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:peteranggita12@gmail.com" class="social-icon-btn" title="Email Direct" id="social-email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Avatar Visual Card -->
+      <div class="avatar-card-wrapper">
+        <div class="avatar-card-inner">
+          <img src="assets/images/profile-peter.jpeg" alt="Developer Avatar Portrait" class="avatar-image" id="avatar-img" />
+          <div class="avatar-float-badge badge-top-right">
+            <i class="fas fa-rocket text-gradient"></i>
+            <!-- <span>5 Proyek Siap</span> -->
+          </div>
+          <div class="avatar-float-badge badge-bottom-left">
+            <i class="fas fa-code text-gradient"></i>
+            <!-- <span>Full-Stack Ready</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section-padding" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Latar Belakang Akademis</span>
+        <h2 class="section-title">Pendidikan</h2>
+      </div>
+
+      <div class="education-grid">
+
+  <!-- Pendidikan Perguruan Tinggi -->
+  <div class="glass-panel education-card">
+    <div class="education-header">
+      <div class="education-icon-box">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="education-title-wrap">
+        <span class="education-badge-date"><i class="far fa-calendar-alt"></i> 2022 – 2026</span>
+        <h3 class="education-institution">Politeknik Caltex Riau (PCR)</h3>
+        <p class="education-degree">D4 Teknik Informatika (Sarjana Terapan Komputer / S.Tr.Kom)</p>
+      </div>
+    </div>
+    <div class="education-body">
+      <div class="education-highlights">
+        <div class="edu-highlight-pill">
+          <i class="fas fa-star text-gradient"></i>
+          <span><strong>IPK:</strong> 3.67 / 4.00</span>
+        </div>
+        <div class="edu-highlight-pill">
+          <i class="fas fa-code-branch text-gradient"></i>
+          <span><strong>Proyek Akhir:</strong> Aplikasi Pendeteksi Penyakit KulitBerbasis Android Dengan MenggunakanMetode Deep Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pendidikan SMA / Sederajat -->
+  <div class="glass-panel education-card">
+    <div class="education-header">
+      <div class="education-icon-box">
+        <i class="fas fa-school"></i>
+      </div>
+      <div class="education-title-wrap">
+        <span class="education-badge-date"><i class="far fa-calendar-alt"></i> 2017 – 2020</span>
+        <h3 class="education-institution">SMA PLUS BINA BANGSA</h3>
+        <p class="education-degree">MIPA</p>
+      </div>
+    </div>
+    <div class="education-body">
+      <div class="education-highlights">
+        <div class="edu-highlight-pill">
+          <i class="fas fa-award text-gradient"></i>
+          <span><strong> Nilai Akhir:</strong> 88.50</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- About & Skills Section -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Keahlian</span>
+        <h2 class="section-title">Teknologi & Keahlian</h2>
+      </div>
+
+      <!-- Stats Grid Counter -->
+      <!-- <div class="stats-grid">
+        <div class="glass-panel stat-card">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Proyek Portofolio Utama</div>
+        </div>
+        <div class="glass-panel stat-card">
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-label">Keahlian Tech Stack</div>
+        </div>
+        <div class="glass-panel stat-card">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">% Komitmen Kode Clean</div>
+        </div>
+        <div class="glass-panel stat-card">
+          <div class="stat-number" data-target="1200">0</div>
+          <div class="stat-label">GitHub Code Commits</div>
+        </div>
+      </div> -->
+
+      <!-- Skill Categories Cards -->
+      <div class="skills-grid">
+        <div class="glass-panel skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge"><i class="fab fa-html5"></i> HTML</span>
+            <span class="skill-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-badge"><i class="fab fa-react"></i> React.js</span>
+            <span class="skill-badge"><i class="devicon-kotlin-plain colored"></i> Kotlin</span>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap"><i class="fas fa-server"></i></div>
+            <h3>Backend & Cloud</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-badge"><i class="fas fa-leaf"></i> MongoDB</span>
+            <span class="skill-badge"><i class="fas fa-cloud"></i> Firebase</span>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap"><i class="fas fa-tools"></i></div>
+            <h3>Tools & Workflow</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-badge"><i class="fab fa-github"></i> GitHub</span>
+            <span class="skill-badge"><i class="fas fa-code-branch"></i> VS Code</span>
+            <span class="skill-badge"><i class="fab fa-figma"></i> Figma</span>
+            <span class="skill-badge"><i class="fas fa-vial"></i> Postman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Featured Projects Section -->
+  <section class="section-padding" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Showcase Karya</span>
+        <h2 class="section-title">Proyek Portofolio</h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+        <button class="filter-btn" data-filter="webapp">Web App</button>
+        <button class="filter-btn" data-filter="mobile">Mobile App</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+
+      <!-- Dynamic Projects Grid Container -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Journey Section -->
+  <section class="section-padding" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Rekam Jejak</span>
+        <h2 class="section-title">Pengalaman Kerja & Magang</h2>
+        <p class="section-desc">
+          Riwayat pengalaman kerja dan program magang industri dalam pengembangan aplikasi web dan solusi teknologi informasi.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Pengalaman Magang 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-panel timeline-card">
+            <div class="exp-badge-wrap">
+              <span class="exp-badge"><i class="fas fa-briefcase"></i> Pengalaman Magang</span>
+            </div>
+            <h3 class="exp-company-name">
+              <i class="fas fa-building text-gradient"></i> PT. Prosys Bangun Persada
+            </h3>
+            <div class="exp-role-division">
+              <span class="exp-role"><i class="fas fa-headset"></i> IT Support</span>
+            </div>
+            <div class="exp-date-info">
+              <i class="far fa-calendar-alt"></i> <span>Agustus 2025 – Oktober 2025</span>
+            </div>
+            <p class="exp-description">
+              Mengelola pemeliharaan serta penanganan gangguan (troubleshooting) pada perangkat keras (hardware) dan perangkat lunak (software) komputer. Bertanggung jawab dalam manajemen pencadangan (backup) data pegawai secara berkala serta melakukan pendataan inventaris PC pegawai guna memastikan operasional IT berjalan optimal dan aman.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pengalaman Magang 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-panel timeline-card">
+            <div class="exp-badge-wrap">
+              <span class="exp-badge"><i class="fas fa-briefcase"></i> Pengalaman Magang</span>
+            </div>
+            <h3 class="exp-company-name">
+              <i class="fas fa-building text-gradient"></i> PT. Pertamina Hulu Rokan
+            </h3>
+            <div class="exp-role-division">
+              <span class="exp-role"><i class="fas fa-laptop-code"></i> Management & Data Analytic</span>
+            </div>
+            <div class="exp-date-info">
+              <i class="far fa-calendar-alt"></i> <span>Oktober 2025 – November 2025</span>
+            </div>
+            <p class="exp-description">
+              Mengembangkan aplikasi web berbasis SVG dan JSON untuk visualisasi data produksi minyak dan gas. Aplikasi ini memungkinkan pemantauan real-time terhadap kinerja sumur minyak, termasuk parameter produksi, tekanan, dan suhu, sehingga mempermudah pengambilan keputusan operasional.
+            </p>
+            <div class="timeline-tags">
+              <span class="tech-mini-badge">SVG</span>
+              <span class="tech-mini-badge">JSON</span>
+              <span class="tech-mini-badge">JavaScript</span>
+              <span class="tech-mini-badge">Data Visualization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pengalaman Kerja / Proyek 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-panel timeline-card">
+            <div class="exp-badge-wrap">
+              <span class="exp-badge"><i class="fas fa-briefcase"></i> Pengalaman Magang</span>
+            </div>
+            <h3 class="exp-company-name">
+              <i class="fas fa-building text-gradient"></i> PT. PLN (Persero) Unit Induk Distribusi Riau dan Kepulauan Riau.
+            </h3>
+            <div class="exp-role-division">
+              <span class="exp-role"><i class="fas fa-headset"></i> Information Technology</span>
+            </div>
+            <div class="exp-date-info">
+              <i class="far fa-calendar-alt"></i> <span> Februari 2026 – Juni 2026</span>
+            </div>
+            <p class="exp-description">
+              Mengembangkan aplikasi dashboard berbasis web untuk memantau dan menganalisis data operasional PLN secara real-time. Mengintegrasikan Google Sheets API sebagai sumber data dinamis guna memastikan informasi yang disajikan selalu up-to-date dan akurat untuk kebutuhan pemantauan harian.
+            </p>
+            <div class="timeline-tags">
+              <span class="tech-mini-badge">Dashboard</span>
+              <span class="tech-mini-badge">Laravel</span>
+              <span class="tech-mini-badge">React.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Mari Berkomunikasi</span>
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-desc">
+          Apakah Anda memiliki ide proyek, tawaran pekerjaan, atau pertanyaan? <br> Jangan ragu untuk mengirimkan pesan!
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Card -->
+        <div class="glass-panel contact-info-card">
+  <h3 style="font-size: 1.4rem; margin-bottom: 24px;">Informasi Kontak</h3>
+  
+  <!-- Email -->
+  <div class="contact-item">
+    <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+    <div>
+      <div class="contact-text-label">Email Utama</div>
+      <a href="mailto:peteranggita12@gmail.com" class="contact-text-val">peteranggita12@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- Nomor HP / WhatsApp -->
+  <div class="contact-item">
+    <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+    <div>
+      <div class="contact-text-label">Nomor HP</div>
+      <a href="https://wa.me/6281378845410" target="_blank" rel="noopener" class="contact-text-val">+62 813-7884-5410</a>
+    </div>
+  </div>
+
+  <!-- GitHub -->
+  <div class="contact-item">
+    <div class="contact-icon-box"><i class="fab fa-github"></i></div>
+    <div>
+      <div class="contact-text-label">GitHub Repository</div>
+      <a href="https://github.com/anggita11" target="_blank" rel="noopener" class="contact-text-val">github.com/anggita11</a>
+    </div>
+  </div>
+
+  <!-- LinkedIn -->
+  <div class="contact-item">
+    <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+    <div>
+      <div class="contact-text-label">LinkedIn Profile</div>
+      <a href="https://linkedin.com/in/peter-anggita" target="_blank" rel="noopener" class="contact-text-val">linkedin.com/in/peter-anggita</a>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <button class="btn btn-secondary btn-sm" id="copy-email-btn" style="width: 100%;">
+      <i class="fas fa-copy"></i> Salin Alamat Email
+    </button>
+  </div>
+</div>
+
+        <!-- Contact Form Card -->
+        <div class="glass-panel contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Nama Lengkap</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Masukkan nama Anda..." required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Alamat Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="nama@email.com..." required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Pesan / Detail Proyek</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Tuliskan pesan atau ide proyek Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit-contact">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-sky">
+    <div class="container footer-content">
+      <a href="#hero" class="back-to-top-btn" title="Kembali ke Atas" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+      <!-- <p>© 2026 SkyPortfolio. Dibuat dengan tema Awan Biru Putih & Glassmorphism.</p>
+      <p style="font-size: 0.8rem; opacity: 0.75;">Siap di-deploy secara publik di GitHub Pages.</p> -->
+    </div>
+  </footer>
+
+  <!-- Project Quick View Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="glass-panel modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Tutup Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <img src="" alt="" class="modal-header-img" id="modal-img" />
+
+      <div class="modal-body-content">
+        <span class="project-category-tag" id="modal-category" style="position: static; display: inline-block; margin-bottom: 12px;"></span>
+        <h2 class="modal-project-title" id="modal-title"></h2>
+        
+        <p id="modal-desc" style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 20px;"></p>
+
+        <h4 style="margin-bottom: 10px;">Teknologi yang Digunakan:</h4>
+        <div id="modal-tags" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;"></div>
+
+        <h4 style="margin-bottom: 10px;">Fitur & Keunggulan Utama:</h4>
+        <ul class="modal-features-list" id="modal-features"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toast">
+    <i class="fas fa-info-circle text-gradient"></i>
+    <span class="toast-text">Notifikasi</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/clouds.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
